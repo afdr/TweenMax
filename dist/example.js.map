@@ -1,0 +1,1 @@
+{"version":3,"sources":["../example.js"],"names":["run","test","console","log"],"mappings":";;AAAA,SAASA,GAAT,GAAe;AACX,QAAIC,OAAO,IAAX;AACAC,YAAQC,GAAR,CAAYF,IAAZ;AACH;AACDD","file":"example.js","sourcesContent":["function run (){\r\n    let test = 1212;\r\n    console.log(test);\r\n}\r\nrun();"]}

@@ -1,0 +1,22 @@
+{
+  "name": "tweenmaxgit",
+  "version": "1.0.0",
+  "description": "tweenmax demos,modify",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afdr/TweenMax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afdr/TweenMax/issues"
+  },
+  "homepage": "https://github.com/afdr/TweenMax#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}
