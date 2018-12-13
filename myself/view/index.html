@@ -54,9 +54,31 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"> </script>
     <script>
-        //var tlm = new TimelineMax();
-        //tlm.to(".logo",1,{opacity:0});
-        TweenMax.to(".logo",1,{opacity:0});
+        //use TweenMax 同时运行, 添加delay, 实现延迟
+        //TweenMax.to('.logo', 1, {opacity:0}); //消失
+        //TweenMax.from('.logo', 1, {opacity:0});  //显示
+        // TweenMax.from('.logo', 1, {scale:0});  //放大
+        // TweenMax.from('.background', 1, {opacity:0, scale:0, delay:1}); //delay 延迟执行
+        // TweenMax.from('h1', 1, {opacity:0, scale:2, delay:2});
+
+        //using delays to manage long animations is hard
+        //instead,use a GASP timeline to create a sequential chain of animations
+        //use TimelineMax  时间轴动画,顺序执行
+        // var timeline = new TimelineMax();
+        // timeline.from('.logo', 1, {scale:0});
+        // timeline.from('.background', 1, {opacity:0, scale:0});
+        // timeline.from('h1', 1, {opacity:0, scale:2});
+
+        //Easing 缓动动画
+         var timeline = new TimelineMax();
+        /*timeline.from('.logo', 1, {scale:0, ease:Bounce.easeOut});
+        timeline.from('.background', .3, {scale:0});
+        timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(1.7)});*/
+
+        timeline.from('.logo', 2, {rotate:30})
+
+
+
 
     </script>
 </body>
